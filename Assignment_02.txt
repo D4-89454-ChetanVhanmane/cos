@@ -1,0 +1,136 @@
+                                                 Assignment 01
+Q1. List the directory contents date wise sorted.
+Ans :
+  sunbeam@D4Chetan89454:~$ ls -l -tr
+  total 36
+  drwxr-xr-x 2 sunbeam sunbeam 4096 Apr  8 03:41 Videos
+  drwxr-xr-x 2 sunbeam sunbeam 4096 Apr  8 03:41 Templates
+  drwxr-xr-x 2 sunbeam sunbeam 4096 Apr  8 03:41 Public
+  drwxr-xr-x 2 sunbeam sunbeam 4096 Apr  8 03:41 Pictures
+  drwxr-xr-x 2 sunbeam sunbeam 4096 Apr  8 03:41 Music
+  drwxr-xr-x 2 sunbeam sunbeam 4096 Apr  8 03:41 Documents
+  drwxr-xr-x 2 sunbeam sunbeam 4096 Apr  8 03:41 Desktop
+  drwxr-xr-x 2 sunbeam sunbeam 4096 Apr 15 15:11 Downloads
+  drwx------ 5 sunbeam sunbeam 4096 Apr 15  2025 snap
+
+Q2. List the directory contents size wise sorted.
+Ans: 
+  sunbeam@D4Chetan89454:~$ du -h --max-depth=0 * | sort -hr
+  250M	snap
+  110M	Downloads
+  68K	Pictures
+  4.0K	Videos
+  4.0K	Templates
+  4.0K	Public
+  4.0K	Music
+  4.0K	Documents
+  4.0K	Desktop
+
+Q3. List directory contents along with their inode no.
+Ans: 
+ sunbeam@D4Chetan89454:~$ ls -i 
+ 2359384 Desktop    2359389 Music     2359302 snap
+ 2359388 Documents  2359390 Pictures  2359386 Templates
+ 2359385 Downloads  2359387 Public    2359391 Videos
+
+Q4. List the contents of the subdirectory
+Ans: 
+  sunbeam@D4Chetan89454:~$ ls snap
+  firefox  snapd-desktop-integration  snap-store
+
+Q5.Create a file, write your surname and name in it and save.
+Ans: 
+  i. sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ touch file.txt
+     sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ cat >> file.txt
+     vhanmane chetan
+ 
+ ii. sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$cat >> file.txt
+     Address :- 06, Raghavendra Nagar saiful Bijapur road solapur-413004
+     
+iii. sunbeam@D4Chetan89454:/ media/sunbeam/New Volume/sunbeam/Assignment/os$ cat file.txt
+     vhanmane chetan Address :- 06, Raghavendra Nagar saiful Bijapur road solapur-413004
+
+Q6.how to change the time stamp of file
+Ans: The most common options for the touch command are:
+  -a: Updates the access time of the file.
+  -m: Updates the modification time of the file.
+  -t TIMESTAMP: Sets the access and modification times to the specified timestamp.
+  -d DATETIME: Sets the access and modification times to the specified date and time.
+-----------------------------------------------------------------------------------------------------
+  sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ touch -t 202304011230 file.txt
+  sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ ls -l
+  total 8
+  -rw-rw-r-- 1 sunbeam sunbeam 201 Apr 15 15:44 demo.txt
+  -rw-rw-r-- 1 sunbeam sunbeam  83 Apr  1  2023 file.txt
+  -rw-rw-r-- 1 sunbeam sunbeam   0 Apr  1  2023 test.txt
+----------------------------------------------------------------------------------------------------
+  sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ touch -m file.txt
+  sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ ls -l
+  total 8
+  -rw-rw-r-- 1 sunbeam sunbeam 201 Apr 15 15:44 demo.txt
+  -rw-rw-r-- 1 sunbeam sunbeam  83 Apr 15 18:03 file.txt
+  -rw-rw-r-- 1 sunbeam sunbeam   0 Apr  1  2023 test.txt
+----------------------------------------------------------------------------------------------------
+Q7. Create directory structure : Give following commands ,
+ -> mkdir one
+ -> cd one
+ -> touch 1.txt 11.txt 111.txt
+ -> mkdir two
+ -> cd two
+ -> touch 2.txt 22.txt 222.txt
+ -> mkdir three
+ -> cd three
+ -> touch 3.txt 33.txt 333.txt
+ -> mkdir four
+ -> cd four
+ -> touch 4.txt 44.txt 444.txt
+ -> mkdir five
+ -> cd five
+ -> touch 5.txt 55.txt 555.txt
+ -> cd ~ (i.e. go to your home directory)
+ 
+8. Considering above directory structure , Do following
+operations : 
+
+i. list the directory contents of directory named
+   "five" from current directory (i.e. home directory).
+   
+   Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ ls one/two/three/four/five
+        555.txt 55.txt  5.txt
+ii. write your name in a file named "44.txt" of directory "four" from current directory.
+   Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ cat >> one/two/three/four/44.txt
+   
+iii. remove the file named "555.txt" from directory "five" from current directory.
+   Ans: chetansunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ rm one/two/three/four/five/555.txt
+
+iv. change directory to five ( i.e. cd one/two/three/four/five/ ).
+
+v. write your course name in file named "3.txt" which resides in directory "three" from current directory (i.e. five).also read the same file.
+   
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os/one/two/three/four$ cat > .././3.txt
+     Pg-Dac
+
+vi. list the contents of directory "two" from current directory (i.e. five).
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os/one/two/three/four$ ls ../../
+     222.txt  22.txt  2.txt  three
+
+vii. remove file named "222.txt" which belongs to directory "two" from current directory (i.e. five)
+Ans sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os/one/two/three/four$ rm ../../222.txt
+
+viii. now change the directory to "one"
+Ans sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os/one/two/three$ cd ../../
+
+ix. remove all files only from directory named "five" from current directory (i.e. one)
+Ans sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os/one$ rm two/three/four/five/*
+
+x. remove directory named "five" from current directory(i.e. one)
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os/one$ rmdir two/three/four/five
+
+xi. remove whole directory named "four" from current directory (i.e. one)
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os/one$ rm -r  two/three/four
+
+xii. change to your home directory.
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os/one$cd ~
+
+9. change the time stamp of file named "3.txt" which resides in directory named "three".(man touch)
+Ans:  sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os/one$ touch  two/three/3.txt
