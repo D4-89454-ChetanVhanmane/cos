@@ -1,0 +1,245 @@
+Command 
+Q1. Man
+ Ans :-NAME
+       ls - list directory contents
+  	SYNOPSIS
+       		ls [OPTION]... [FILE]...
+	DESCRIPTION
+       		List  information  about the FILEs (the current directory by default).  Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+       		Mandatory arguments to long options are mandatory for short options too.
+       -a, --all
+              do not ignore entries starting with .
+       -A, --almost-all
+              do not list implied . and ..
+       --author
+              with -l, print the author of each file
+       -b, --escape
+              print C-style escapes for nongraphic characters
+       --block-size=SIZE
+              with -l, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format
+              below
+       -B, --ignore-backups
+              do not list implied entries ending with ~
+       -c     with  -lt:  sort  by, and show, ctime (time of last modification of file status informa‐
+              tion); with -l: show ctime and sort by name; otherwise: sort by ctime, newest first
+       -C     list entries by columns
+       --color[=WHEN]
+              colorize the output; WHEN can be 'always' (default if omitted), 'auto', or 'never'; more
+              info below
+       -d, --directory
+              list directories themselves, not their contents
+       -D, --dired
+              generate output designed for Emacs' dired mode
+       -f     do not sort, enable -aU, disable -ls --color
+       -F, --classify
+              append indicator (one of */=>@|) to entries
+       --file-type
+ Manual page ls(1) line 1/230 21% (press h for help or q to quit)
+ 
+Q2. uname
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ uname
+     Linux 
+     
+Q3. pwd
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ pwd
+     /media/sunbeam/New Volume/sunbeam/Assignment/os
+     
+4. hostname
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ hostname
+     D4Chetan89454
+     
+5. date
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ date
+     Wednesday 16 April 2025 05:21:58 PM IST
+     
+6. cal
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ cal
+         April 2025       
+     Su Mo Tu We Th Fr Sa  
+            1  2  3  4  5  
+      6  7  8  9 10 11 12  
+      13 14 15 16 17 18 19  
+      20 21 22 23 24 25 26  
+      27 28 29 30 
+      
+7. ls, dir
+Ans:  sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ ls one
+      111.txt  11.txt  1.txt  55.txt  5.txt  two
+      
+8. cat
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ cat one.txt
+     cat: one.txt: No such file or directory
+     
+9. cat >> fileName
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ cat >> one.txt
+     chetan is a handsome boy
+     
+10. cp
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ cp one.txt two.txt
+
+11./12. mv
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ mv two.txt three.txt
+
+13. tac
+Ans : 
+   sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ tac test.txt
+   ju
+   g
+   r
+   d
+   ew
+   d
+   v
+   a
+   ten
+   gine
+   eight
+   seven
+   six
+   five
+   four
+   three
+   two
+   one 
+  
+  rev:- 
+  sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ rev test.txt
+  eno
+  owt
+  eerht
+  ruof
+  evif
+  xis
+  neves
+  thgie
+  enig
+  net
+  a  
+  v
+  d
+  we
+  d
+  r
+  g
+  uj
+  
+14.wc
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ wc test.txt
+     18 18 68 test.txt
+     
+15. mkdir
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ mkdir chetan
+
+16. cd 
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ cd 
+
+17. rm
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ rm three.txt
+
+18. rmdir
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ rmdir chetan
+
+19. touch 
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ touch chetan.txt
+
+20. sort
+Ans:  sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ sort number.txt
+        0
+	02
+	1
+	20
+	30
+	4
+	4
+	45
+	45
+	4512
+	50
+	6
+	65
+	8
+	8
+	9
+	9
+	hundred
+	two
+21. uniq
+Ans: 
+	sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ uniq number.txt
+	8
+	9
+	two
+	9
+	4512
+	45
+	4
+	8
+	6
+	1
+	0
+	02
+	20
+	30
+	4
+	50
+	65
+	45
+	hundred
+22. head
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ head -n 5 number.txt
+	8
+	9
+	two
+	9
+	4512
+23. tail
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ tail -n 5 number.txt
+	4
+	50
+	65
+	45
+	hundred
+24. factor
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ factor 12
+     12: 2 2 3
+25. alias
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ alias list="ls -l"
+
+26. unalias
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ unalias list
+
+27. echo
+ANs: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ echo hello
+     hello 
+
+28. ps
+Ans: 
+	sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ ps
+	    PID TTY          TIME CMD
+	   4191 pts/0    00:00:00 bash
+	  12828 pts/0    00:00:00 ps
+29. kill
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ kill 4191
+
+30.env
+Ans; 
+env
+SHELL=/bin/bash
+SESSION_MANAGER=local/D4Chetan89454:@/tmp/.ICE-unix/1502,unix/D4Chetan89454:/tmp/.ICE-unix/1502
+QT_ACCESSIBILITY=1
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+SSH_AGENT_LAUNCHER=gnome-keyring
+XDG_MENU_PREFIX=gnome-
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LANGUAGE=en_IN:en
+GNOME_SHELL_SESSION_MODE=ubuntu
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+XMODIFIERS=@im=ibus
+DESKTOP_SESSION=ubuntu
+GTK_MODULES=gail:atk-bridge
+PWD=/media/sunbeam/New Volume/sunbeam/Assignment/os
+LOGNAME=sunbeam
+XDG_SESSION_DESKTOP=ubuntu
+---------------------------------------------------------------
+
