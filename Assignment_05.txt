@@ -1,0 +1,69 @@
+                                         Assignment 05
+
+1. Count the number of students. ( wc )
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ wc grade.txt
+     8  23 151 grade.txt
+
+2. List the students having grade A. ( grep )
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ grep "A$"  grade.txt
+	John Smith: A
+	Emily Wong: A
+	James Johnson: A
+
+3. List the students not having grade B. ( grep )
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ grep -v "B$"  grade.txt
+	---------------------
+	John Smith: A
+	Alex Rodriguez: C
+	Emily Wong: A
+	James Johnson: A
+	---------------------
+
+4. Print the count of students not having grade C. ( grep )
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ grep -v "C$"  grade.txt
+	---------------------
+	John Smith: A
+	Mary Johnson: B
+	Emily Wong: A
+	David Lee: B
+	James Johnson: A
+	Edwin Albert: B
+	---------------------
+
+5. List the student/students whose name starts with E & having grade B. ( grep )
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ grep  "^E"  grade.txt | grep "B$"
+	Edwin Albert: B
+
+6. Show only Studetns first name & Last Name. ( cut )
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ cut -d " " -f 1,2  grade.txt
+	---------------------
+	John Smith:
+	Mary Johnson:
+	Alex Rodriguez:
+	Emily Wong:
+	David Lee:
+	James Johnson:
+	Edwin Albert:
+	---------------------
+
+7. Show only grades. ( cut )
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ cut -d ":" -f 2  grade.txt
+	---------------------
+ 	A
+ 	B
+ 	C
+ 	A
+ 	B
+ 	A
+ 	B
+8. Show only first name & grades. ( cut )
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ cut -d " " -f 1,3  grade.txt
+	---------------------
+	John A
+	Mary B
+	Alex C
+	Emily A
+	David B
+	James A
+	Edwin B
+	---------------------

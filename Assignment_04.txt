@@ -1,0 +1,60 @@
+                                       Assignment 04
+                                       
+ 1. count the no. of words ,characters and lines from above 2 file.(man wc)
+ Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ wc -w -m -l Assignment_04.txt
+      5  25 144 Assignment_04.txt
+      
+ 2. list the lines having word "files" (man grep)
+ Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ grep "files" 		Assignment_04.txtfiles have permissions.
+	files have inode no.
+	files have size.
+	there are several types of files
+
+ 3. list the lines having word "file" (man grep)
+ Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ grep "file" Assignment_04.txt
+	In Linux everything is file
+	files have permissions.
+	files have inode no.
+	files have size.
+	there are several types of files
+	
+ 4. list the lines which don't have word "files" (man grep)
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ grep -v "files" Assignment_04.txt
+	Linux is open source.
+	In Linux everything is file
+
+ 5. list the lines having word "have" . (man grep)
+ Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ grep  "have"   Assignment_04.txtfiles have permissions.
+       files have inode no.
+       files have size.
+       
+ 6. list the lines starts with letter "f" (man grep)
+ Ans:sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ grep  "^f" Assignment_04.txt
+	files have permissions.
+	files have inode no.
+	files have size.
+ 
+ 7. list the lines ends with "." (man grep)
+ Ans:sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ grep  "[.$]" data.txt
+	Linux is open source.
+	files have permissions.
+	files have inode no.
+	files have size.
+
+
+ 8. list only first two lines.(man head)
+ Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ head -n 2 data.txt
+	Linux is open source.
+	In Linux everything is file
+
+ 9. list only last three lines.(man tail)
+ Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ tail -n 3 data.txt
+	files have inode no.
+	files have size.
+	there are several types of files
+ 
+10. list line no.3,4 and 5 . (man head and tail)
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os$ head -n 5 data.txt | tail -n 3files have permissions.
+	files have inode no.
+	files have size.
+

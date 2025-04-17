@@ -1,0 +1,14 @@
+1. List only directories from 18oct.
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os/18Oct$ ls -d */
+     dir1/  dir2/  dir3/
+
+2. List only files.
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os/18Oct$ ls *txt
+     1.txt  2.txt  3.txt  4.txt
+
+3. Make 2.txt executable, now search the files having permission as rwxr-xr-x (755) from
+18oct.
+4. Search the file 4.txt
+Ans: sunbeam@D4Chetan89454:/media/sunbeam/New Volume/sunbeam/Assignment/os/18Oct$ find . -name 4.txt
+    ./4.txt
+
